@@ -2,7 +2,7 @@
 
 Third-year Computer Science student at **Ștefan cel Mare University of Suceava (USV)**. Robotics enthusiast.
 
-## Achievement
+## Achievements
 
 **1st place — HARD & SOFT 2026**  
 Won with **Team Sudo**, placing first among 16 international teams.
