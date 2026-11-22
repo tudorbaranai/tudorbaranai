@@ -19,7 +19,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  SNAKE_SLOWDOWN: 3 # 1 = original speed, 3 = three times slower
+  SNAKE_SLOWDOWN: 2.33 # 1 = original speed (~30 s loop), 2.33 = ~70 s loop
 
 jobs:
   build:
@@ -42,7 +42,7 @@ jobs:
           import re, pathlib
           for f in pathlib.Path("dist").glob("github-snake*.svg"):
               svg = f.read_text()
-              f.write_text(re.sub(r"(\d+)ms", lambda m: f"{int(m.group(1)) * ${{ env.SNAKE_SLOWDOWN }}}ms", svg))
+              f.write_text(re.sub(r"(\d+)ms", lambda m: f"{round(int(m.group(1)) * ${{ env.SNAKE_SLOWDOWN }})}ms", svg))
           PY
 
       - name: Generate time-of-day card
