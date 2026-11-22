@@ -1,5 +1,5 @@
 # Builds the images shown on the profile README (contribution snake and
-# coding-habits card) and publishes them to the `output` branch.
+# time-of-day card) and publishes them to the `output` branch.
 # Nothing is committed to main, so README history stays clean.
 name: Profile assets
 
@@ -18,6 +18,9 @@ concurrency:
   group: profile-assets
   cancel-in-progress: true
 
+env:
+  SNAKE_SLOWDOWN: 3 # 1 = original speed, 3 = three times slower
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +35,17 @@ jobs:
             dist/github-snake.svg?palette=github-light&color_snake=#00C02E
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#00C02E
 
-      - name: Generate coding-habits card
+      - name: Slow the snake down
+        # Every animation in the SVG shares one duration; stretching it keeps them in sync.
+        run: |
+          python3 - <<'PY'
+          import re, pathlib
+          for f in pathlib.Path("dist").glob("github-snake*.svg"):
+              svg = f.read_text()
+              f.write_text(re.sub(r"(\d+)ms", lambda m: f"{int(m.group(1)) * ${{ env.SNAKE_SLOWDOWN }}}ms", svg))
+          PY
+
+      - name: Generate time-of-day card
         run: python3 .github/scripts/coding_stats.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

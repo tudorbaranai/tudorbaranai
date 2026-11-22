@@ -17,20 +17,16 @@ We built **The Guardian**, a wearable fall-detection and vital-monitoring system
 - **25h** — Participated in a 25-hour university competition. Our challenge was to address a climate problem.
 
 <details>
-<summary><b>⚡ More about my coding habits</b></summary>
+<summary>More</summary>
 <br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tudorbaranai/tudorbaranai/output/coding-stats-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/tudorbaranai/tudorbaranai/output/coding-stats.svg" />
-  <img alt="When I commit and which languages I write in" src="https://raw.githubusercontent.com/tudorbaranai/tudorbaranai/output/coding-stats-dark.svg" />
+  <img alt="How my commits split across morning, daytime, evening and night" src="https://raw.githubusercontent.com/tudorbaranai/tudorbaranai/output/coding-stats-dark.svg" />
 </picture>
 
-<sub>Built daily from my public commits by a GitHub Action.</sub>
-
 </details>
-
-<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/tudorbaranai/tudorbaranai/output/github-snake-dark.svg" />
