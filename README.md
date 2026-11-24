@@ -1,6 +1,6 @@
 # Tudor Baranai
 
-Third-year Computer Science student at **Ștefan cel Mare University of Suceava (USV)**. Robotics enthusiast.
+Third-year Computer Science student at **Ștefan cel Mare University of Suceava (USV)**.
 
 ## Achievements
 
