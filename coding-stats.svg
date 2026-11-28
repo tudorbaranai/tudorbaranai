@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="471" height="106" viewBox="0 0 471 106">
+<style>text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", monospace; font-size: 14px; fill: #1f2328; white-space: pre; }</style>
+<g xml:space="preserve">
+<text x="12" y="26">Morning    15 commits  █▊░░░░░░░░░░░░░░░░░░░    8.6%</text>
+<text x="12" y="48">Daytime    43 commits  █████▏░░░░░░░░░░░░░░░   24.6%</text>
+<text x="12" y="70">Evening    52 commits  ██████▏░░░░░░░░░░░░░░   29.7%</text>
+<text x="12" y="92">Night      65 commits  ███████▊░░░░░░░░░░░░░   37.1%</text>
+</g>
+</svg>
